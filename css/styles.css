@@ -126,6 +126,15 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
+    background-image:linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 .hero-title {
     font-weight: 700;
@@ -178,18 +187,30 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.main-about-list{
-    display: flex;
+.main-about-list  {
+    display: flex; 
     gap: 24px;
     
 }
-.main-about-title{
+.main-about-title .main-icons {
     visibility: hidden;
     /*width:calc((100% - 3*24px)/4);*/
 }
-.main-link{
+.main-link .main-icons{
     width: calc((100% - 3*24px)/4);
 }
+.main-link-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color:#f4f4fd;
+    margin-bottom: 8px;
+}
+
 .main-about-name {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -256,8 +277,27 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455;
-    
+    color: #434455; 
+    margin-bottom: 8px;
+}
+.icon-list{
+display: flex;
+gap: 24px;
+
+}
+.icon-item{
+width: 40px;
+height: 40px;
+}
+.icon-link{
+width: 100%;
+height: 100%;
+background-color: #4d5ae5;
+border-radius: 50%;
+display: flex;
+}
+.icon-icon{
+fill: #f4f4fd;
 }
 /*===Portfolio==*/
 .portfolio {
@@ -345,6 +385,7 @@ img {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
+    
 }
 
 .footer-text {
@@ -354,4 +395,22 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+.footer-icon-list{
+    display: flex;
+    gap: 16px;
+}
+.footer-item{
+    width: 40px;
+    height: 40px;
+}
+.icon-footer{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+}
+.icon-footer-icon{
+fill: #f4f4fd;
 }
