@@ -252,10 +252,11 @@ img {
 .team-item {
     background: #fff;
     border-radius: 0 0 4px 4px;
-
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
 }
 .team-subtitle {
-    display: flex;
+    
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -298,6 +299,7 @@ display: flex;
 }
 .icon-icon{
 fill: #f4f4fd;
+
 }
 /*===Portfolio==*/
 .portfolio {
@@ -327,7 +329,7 @@ fill: #f4f4fd;
     width:calc((100% - 2*24px)/3);
 }
 .portfolio-prof{
-    display: flex;
+    
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -335,6 +337,11 @@ fill: #f4f4fd;
     border-top: none;
     padding: 32px 16px;
     
+}
+.portfolio-prof:hover,
+.portfolio-img:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
 }
 .portfolio-title {
     font-weight: 500;
