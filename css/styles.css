@@ -98,14 +98,22 @@ img {
 }
 .header-menu-link:hover ,
 .header-menu-link:focus {
-    color: #404bbf;
-}
- 
-.contact-link:hover ,
-.contact-link:focus {
-    color: #404bbf;
+color: #404bbf;
 }
 
+.contact-link:hover ,
+.contact-link:focus {
+color: #404bbf;
+}
+.heder-menu-link::after {
+content: "";
+background-color: #404bbf;
+width: 40px;
+height: 4px;
+}
+.heder-menu-link:hover::after{
+background-color: #404bbf;
+}
 .contact-link {
     font-weight: 400;
     font-size: 16px;
@@ -260,7 +268,8 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 32px 0;
+    padding: 32px 16px;
+
 }
 .team-name{
     font-weight: 500;
@@ -296,11 +305,16 @@ height: 100%;
 background-color: #4d5ae5;
 border-radius: 50%;
 display: flex;
+align-items: center;
+justify-content: center;
 }
 .icon-icon{
 fill: #f4f4fd;
-
 }
+.icon-link:hover{
+background-color: #31d0aa;
+}
+
 /*===Portfolio==*/
 .portfolio {
     background-color: #FFFFFF;
@@ -417,7 +431,13 @@ fill: #f4f4fd;
     background-color: #4d5ae5;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .icon-footer-icon{
 fill: #f4f4fd;
+}
+.icon-footer:hover{
+background-color:#31d0aa;
 }
