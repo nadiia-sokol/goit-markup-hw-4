@@ -336,6 +336,7 @@ background-color: #31d0aa;
     background-color: #FFFFFF;
     padding-top: 120px;
     padding-bottom: 120px;
+
 }
 .portfolio-about{
     font-weight: 700;
@@ -353,15 +354,19 @@ background-color: #31d0aa;
     /*gap: 48px 24px;*/
     column-gap: 24px;
     row-gap: 48px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    /*box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            0px 2px 1px rgba(46, 47, 66, 0.08);*/
+    
 
 }
 .portfolio-item{
     width:calc((100% - 2*24px)/3);
     position: relative;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-prof{
     
@@ -399,8 +404,7 @@ background-color: #31d0aa;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 40px 32px;
 }
 .cover-text {
 position: absolute;
@@ -442,6 +446,7 @@ overflow: hidden;
 .footer-wrap {
     display: flex;
     align-items: baseline;
+    margin-right: 120px;
     
 }
 .footer-logo-color {
